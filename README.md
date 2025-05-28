@@ -1,17 +1,16 @@
-#Q2: Transfer Learning for Fashion-MNIST
-##Overview
+## Overview
 This project demonstrates transfer learning for image classification on the Fashion-MNIST dataset. A pretrained CNN (ResNet50) is adapted to classify 28×28 grayscale fashion images into 10 classes, following the AI Community Assignment 2025 guidelines.
 
-##Task Objective
-Adapt a pretrained CNN (ResNet50) to classify Fashion-MNIST images
+## Task Objective
+### Adapt a pretrained CNN (ResNet50) to classify Fashion-MNIST images
 
-Implement a data pipeline:
+### Implement a data pipeline:
 
 Resize images to 224×224
 
 Convert grayscale (1 channel) to RGB (3 channels)
 
-Model setup:
+### Model setup:
 
 Load pretrained backbone without top layers
 
@@ -19,7 +18,7 @@ Freeze backbone and add a new fully connected head
 
 Train only the head, record validation metrics
 
-Fine-tuning:
+### Fine-tuning:
 
 Unfreeze selected deeper blocks
 
@@ -27,13 +26,13 @@ Fine-tune with a lower learning rate
 
 Experiment with data augmentation, learning rate scheduling, dropout, and weight decay
 
-##Data
+## Data
 Dataset: Fashion-MNIST
 
 Access: Automatically loaded using TensorFlow/Keras
 
-##Approach
-### 1. Data Pipeline
+## Approach
+### 1.Data Pipeline
 
 Loaded Fashion-MNIST using Keras
 
@@ -66,7 +65,7 @@ Continued training with a lower learning rate (1e-5) for 5 epochs
 
 Further improved accuracy and adapted model to Fashion-MNIST
 
-### 5.Experimentation
+## Experimentation
 
 Data augmentation: Improved robustness to input variations
 
@@ -74,27 +73,11 @@ Learning rate scheduling: Used exponential decay for smoother convergence
 
 Dropout & L2 regularization: Prevented overfitting
 
-### 6.Evaluation
+## Evaluation
 
 Evaluated final model on the test set
 
 Plotted validation accuracy and loss curves for both training phases
 
-##Files
+## Files
 Q2_FashionMNIST_TransferLearning.ipynb — Main notebook (code + explanations)
-
-README.md — This file
-
-##References
-Fashion-MNIST Dataset
-
-TensorFlow Keras Documentation
-
-AI Community Assignment 2025 (PDF)
-
-##Notes
-All code, explanations, and outputs are present in the notebook.
-
-Data augmentation, learning rate scheduling, and regularization experiments are included as required.
-
-For any issues, please check the comments in the notebook or contact via the WhatsApp group linked in the assignment.
